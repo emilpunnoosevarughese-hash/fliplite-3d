@@ -1,5 +1,5 @@
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import { ShoppingCart, Search, User, Package, Menu, LogOut, Settings as SettingsIcon } from 'lucide-react';
+import { ShoppingCart, Search, User, Menu, LogOut, Settings as SettingsIcon } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 
@@ -25,8 +25,8 @@ export default function Navbar({ cartCount }) {
   return (
     <nav className="navbar glass-panel">
       <div className="container">
-        <Link to="/" className="nav-brand">
-          <Package className="brand-icon" size={28} />
+        <Link to="/" className="nav-brand" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+          <img src="/fliplite-logo.png" alt="FlipLite Logo" style={{ width: '32px', height: '32px', borderRadius: '8px', objectFit: 'cover', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.3)' }} />
           <span>FlipLite</span>
         </Link>
         
