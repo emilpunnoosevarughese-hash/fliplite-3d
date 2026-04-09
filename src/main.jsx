@@ -6,8 +6,7 @@ import ErrorBoundary from './components/ErrorBoundary.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ErrorBoundary>
-      <App />
-    </ErrorBoundary>
+    {/* DEV MODE: ErrorBoundary disabled for standard testing */}
+    <App />
   </StrictMode>,
 )

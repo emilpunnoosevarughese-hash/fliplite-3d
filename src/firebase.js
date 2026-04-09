@@ -18,6 +18,8 @@ const googleProvider = new GoogleAuthProvider();
 
 // AI SHIELD (Firebase App Check + Google reCAPTCHA Enterprise)
 // Strictly enforces that your backend only communicates with genuine human traffic, dropping algorithmic bot attacks.
+// DEV MODE: DISABLED. Uncomment before deploying to Production!
+/*
 try {
   if (typeof window !== 'undefined') {
     initializeAppCheck(app, {
@@ -28,5 +30,6 @@ try {
 } catch (error) {
   console.error("AI AppCheck Shield Initialization Warning:", error);
 }
+*/
 
 export { auth, googleProvider };
